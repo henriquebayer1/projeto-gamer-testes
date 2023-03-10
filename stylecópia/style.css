@@ -1,0 +1,207 @@
+/****** CLASSES GENÉRICAS ******/
+
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    .layout-grid {
+        width: 90%;
+        height: 60px;
+        max-width: 375px;
+        margin: 0 auto;
+    border: 1px solid red;}
+    
+    .alinhamento-between-center {display: flex;
+    justify-content: space-between;
+    align-items: center;}
+    
+    .alinhamento-center-center {display: flex;
+        justify-content: center;
+        align-items: center;}
+    
+    
+    /****** FONTES IMPORTADAS ******/
+    
+    
+    @font-face {
+        font-family: TitiliumWeb-black;
+        src: url(../assets/fonts/TitilliumWeb-Black.ttf);
+    }
+    @font-face {
+        font-family: TitiliumWeb-bold;
+        src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+    }
+    @font-face {
+        font-family: TitiliumWeb-semibold;
+        src: url(../assets/fonts/TitilliumWeb-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: TitiliumWeb-regular;
+        src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+    }
+    @font-face {
+        font-family: TitiliumWeb-light;
+        src: url(../assets/fonts/TitilliumWeb-Light.ttf);
+    }
+    @font-face {
+        font-family: Inter;
+        src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+    @font-face {
+        font-family: Quicksand;
+        src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
+    }
+    
+    
+    /****** BODY ******/
+    
+    
+    body {background-color: gray;}
+    
+    
+    
+    /****** HEADER ******/
+    
+    header {height: 60px;
+        background-color: #1B1426;}
+    
+    /* Parte relacionada ao header top */
+     
+        .header-top {display: none;
+    
+    
+    
+    }
+    
+    
+        .contatos {
+    
+    
+    }
+    
+        .phone {
+    
+    
+    
+        }
+    
+        .email {
+    
+    
+        }
+    
+        .redes-sociais {
+    
+    
+    }
+    
+    
+    /* Parte relacionada ao header bottom */
+    
+    
+            .header-bottom {
+    
+    
+            }
+    
+    
+            header .header-bottom .logo {height: 55px;
+            width: 196px;}
+            
+            header .header-bottom nav a {text-decoration: none;}
+    
+    
+            header .header-bottom .icon-menu-nav {
+    
+    
+            }
+    
+    
+            header .header-bottom .menu-navegacao {position: fixed;
+                top: 60px;
+                left: 0;
+                width: 80vw;
+                height: calc(100vh - 60px);
+                display: flex;
+                flex-direction: column;
+                background-color: gray;
+                border: 1px solid white;
+                display: none;
+            }
+    
+    
+    
+            header .header-bottom .menu-usuario {display: none;
+    
+    
+            }
+    
+            header .header-bottom .icon-menu-elipse {
+    
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /****** MAIN ******/
+    
+    main {height: 518px;
+    
+    }
+    
+    .main-flex {height: 518px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    
+    
+    }
+    
+    main .banner { 
+    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
+    
+    
+    }
+    
+    main #title-main-page {font-family: TitiliumWeb-black;
+    font-size: 40px;
+    font-weight: 900; 
+    color: white;
+    filter: drop-shadow(0px 0px 7px #FD4255);}
+    
+    main .button-sobre {
+    height: 40px;
+    width: 171px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+    margin-bottom: 90px;
+    font-family: TitiliumWeb-bold;
+    line-height: 37px;
+    font-size: 24px;
+    }
+    
+    /****** FOOTER ******/
+    
+    
+    
+    
+    
