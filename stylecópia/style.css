@@ -75,23 +75,23 @@
     }
     
     
-        .contatos {
+       header .header-top .contatos {
     
     
     }
     
-        .phone {
+     header .header-top .phone {
     
     
     
         }
     
-        .email {
+        header .header-top .email {
     
     
         }
     
-        .redes-sociais {
+        header .header-top .redes-sociais {
     
     
     }
@@ -105,13 +105,51 @@
     
             }
     
+           header .header-bottom .contatos {
+    
+     
+            }
+            
+             header .header-bottom .phone {color: white;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 15px;
+            
+            
+                }
+            
+            header .header-bottom .email {color: white;
+                font-family: Inter;
+            font-weight: 400;
+            font-size: 15px;
+            
+                }
+            
+            header .header-bottom .redes-sociais {border-bottom: none;
+            display: flex;
+            width: 40vw;
+                justify-content: space-between;
+                align-items: center;
+    
+        }
+
     
             header .header-bottom .logo {height: 55px;
             width: 196px;}
             
-            header .header-bottom nav a {text-decoration: none;}
+            header .header-bottom nav a {text-decoration: none;
+                border-bottom: 1px solid #F9AA01;
+                width: 80vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+           }
     
-    
+            header .header-bottom a {color: white;
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 15px;}
+
             header .header-bottom .icon-menu-nav {
     
     
@@ -125,9 +163,11 @@
                 height: calc(100vh - 60px);
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
                 background-color: gray;
                 border: 1px solid white;
-                display: none;
+                
             }
     
     
