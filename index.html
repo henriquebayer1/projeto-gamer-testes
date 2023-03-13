@@ -64,7 +64,7 @@
 
         <div class="layout-grid alinhamento-between-center">
 
-            <img class="icon-menu-nav"src="./assets/icons/Vector.svg" alt="icone menu">
+            <img onclick="mostrarmenu" class="icon-menu-nav"src="./assets/icons/Vector.svg" alt="icone menu">
 
             <img class="logo" src="./assets/images/logotipo-gamer.png" alt="logotipo da empresa">
 
@@ -81,14 +81,14 @@
 
                 <div class="phone">
 
-                    <img src="./assets/icons/icone_telefone.png" alt="Icone Telefone">
+                    <img id="phone-icon" src="./assets/icons/icone_telefone.png" alt="Icone Telefone">
                     <span>(11) 0900-1010</span>
 
                 </div>
 
                 <div class="email">
 
-                    <img src="./assets/icons/icone_email.png" alt="Icone email">
+                    <img id="email-icon" src="./assets/icons/icone_email.png" alt="Icone email">
                     <span>contato@gamer.com.br</span>
 
                 </div>
@@ -173,6 +173,16 @@
 
 
     <footer></footer>
+
+    <script>
+
+function mostrarmenu() {
+    document.getElementById("menu-navegacao") .classList.toggle("mostrarmenu")
+    
+}
+
+    </script>
+
 </body>
 
 </html>
