@@ -9,7 +9,7 @@
 
 .layout-grid {
     width: 90%;
-    height: 60px;
+    
     max-width: 375px;
     margin: 0 auto;
     border: 1px solid red;
@@ -167,6 +167,7 @@ header .header-bottom a {
 header .header-bottom .icon-menu-nav {}
 
 
+
 header .header-bottom .menu-navegacao {
     position: fixed;
     top: 60px;
@@ -181,7 +182,14 @@ header .header-bottom .menu-navegacao {
     z-index: 21;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(10px);
+    transition: left 0.4s;
 }
+
+.mostraromenu {left: 0 !important;
+    }
+
+    .mostraromenuuser {right: 0 !important;
+    }
 
 header .header-bottom .menu-navegacao a {
     margin-top: 20px;
@@ -192,19 +200,26 @@ header .header-bottom .menu-navegacao a {
 header .header-bottom nav > a:first-of-type {color: #F9AA01;}
 
 
+
 header .header-bottom .menu-usuario {background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(10px);
     position: fixed;
-    right: 0;
+    right: -15vw;
     top: 60px;
     width: 15vw;
+    padding: 10px;
     height: calc(30vh - 60px);
     display: flex;
-    align-items: center;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    transition: right 0.4s;
+
 }
+
+
+
+
 
 header .header-bottom .icon-menu-elipse {}
 
@@ -213,6 +228,8 @@ header .header-bottom .icon-menu-elipse {}
 
 #phone-icon {margin-right: 15px;
   }
+
+ 
 
 
 
@@ -234,13 +251,17 @@ header .header-bottom .icon-menu-elipse {}
 
 /****** MAIN ******/
 
+
+/* PARTE DA PAGINA HOME */
+
+
 main {
-    height: 518px;
+   
 
 }
 
 .main-flex {
-    height: 518px;
+    height: 606px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -251,8 +272,12 @@ main {
 
 main .banner {
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
-
-
+    width: 100%;
+    background-color: rebeccapurple;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 606px;
 }
 
 main #title-main-page {
@@ -272,6 +297,34 @@ main .button-sobre {
     font-family: TitiliumWeb-bold;
     line-height: 37px;
     font-size: 24px;
+    text-decoration: none;
+    color: black;
 }
+
+
+ /* PARTE CARDS DE JOGOS */
+
+ .cards-flex {height: 589px;
+display: flex;
+
+}
+
+.box-transparente {height: 50px;
+    width: 335px;
+    border: ;
+    background-image: linear-gradient(to right bottom, rgba(225, 225, 225, 0.8), rgba(200, 200, 200, 0.4));
+    backdrop-filter: blur(5px);}
+
+.box-amarelo {background-color: #F9AA01;
+    
+    width: 200px;
+    height: 40px;
+    -moz-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
+    -webkit-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
+    -o-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
+    -ms-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
+    transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
+    }
+
 
 /****** FOOTER ******/

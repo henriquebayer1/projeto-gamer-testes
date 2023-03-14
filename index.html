@@ -60,90 +60,91 @@
         <!-- header bottom destinada ao mobile -->
 
         <div class="header-bottom">
- <!-- icone menu para direcionar para a nav mobile  -->
+            <!-- icone menu para direcionar para a nav mobile  -->
 
-        <div class="layout-grid alinhamento-between-center">
+            <div class="layout-grid alinhamento-between-center">
 
-            <img onclick="mostrarmenu" class="icon-menu-nav"src="./assets/icons/Vector.svg" alt="icone menu">
+                <img onclick="mostrarmenu()" class="icon-menu-nav " src="./assets/icons/Vector.svg" alt="icone menu">
 
-            <img class="logo" src="./assets/images/logotipo-gamer.png" alt="logotipo da empresa">
+                <img class="logo" src="./assets/images/logotipo-gamer.png" alt="logotipo da empresa">
 
-    
 
-            <nav class="menu-navegacao">
 
-                <a href="">Início</a>
-                <a href="">Jogadores</a>
-                <a href="">Equipe</a>
-                <a href="">Notícias</a>
+                <nav id="menu-nav" class="menu-navegacao mostraromenu">
 
-                <!-- Visivel apenas no mobile -->
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipe</a>
+                    <a href="">Notícias</a>
 
-                <div class="phone">
+                    <!-- Visivel apenas no mobile -->
 
-                    <img id="phone-icon" src="./assets/icons/icone_telefone.png" alt="Icone Telefone">
-                    <span>(11) 0900-1010</span>
+                    <div class="phone">
+
+                        <img id="phone-icon" src="./assets/icons/icone_telefone.png" alt="Icone Telefone">
+                        <span>(11) 0900-1010</span>
+
+                    </div>
+
+                    <div class="email">
+
+                        <img id="email-icon" src="./assets/icons/icone_email.png" alt="Icone email">
+                        <span>contato@gamer.com.br</span>
+
+                    </div>
+
+                    <div class="redes-sociais">
+
+                        <b href="">
+
+                            <img src="./assets/icons/Vector (4).svg" alt="Facebook da empresa">
+
+                        </b>
+
+                        <b href="">
+
+                            <img src="./assets/icons/Vector (3).svg" alt="Linkedin da empresa">
+
+                        </b>
+
+                        <b href="">
+
+                            <img src="./assets/icons/Vector (2).svg" alt="Instagram da empresa">
+
+                        </b>
+
+                    </div>
+
+                </nav>
+
+                <!-- icon elipse para direcionar ao menu usuario mobile  -->
+
+                <img onclick="mostrarmenuuser()" class="icon-menu-elipse" src="./assets/icons/Vector (1).svg"
+                    alt="icon menu usuario">
+
+                <div id="menu-user" class="menu-usuario">
+
+
+                    <a href="">
+
+                        <img src="./assets/icons/Vector (5).svg" alt="icone usuario">
+
+                    </a>
+
+                    <a href="">
+
+                        <img src="./assets/icons/Vector (6).svg" alt="icone compras">
+
+                    </a>
+
+                    <a href="">
+
+                        <img src="./assets/icons/Vector (7).svg" alt="icone pesquisa">
+
+                    </a>
 
                 </div>
-
-                <div class="email">
-
-                    <img id="email-icon" src="./assets/icons/icone_email.png" alt="Icone email">
-                    <span>contato@gamer.com.br</span>
-
-                </div>
-
-                <div class="redes-sociais">
-
-                    <b href="">
-
-                        <img src="./assets/icons/Vector (4).svg" alt="Facebook da empresa">
-
-                    </b>
-
-                    <b href="">
-
-                        <img src="./assets/icons/Vector (3).svg" alt="Linkedin da empresa">
-
-                    </b>
-
-                    <b href="">
-
-                        <img src="./assets/icons/Vector (2).svg" alt="Instagram da empresa">
-
-                    </b>
-
-                </div>
-
-            </nav>
-
-            <!-- icon elipse para direcionar ao menu usuario mobile  -->
-
-            <img class="icon-menu-elipse" src="./assets/icons/Vector (1).svg" alt="icon menu usuario">
-
-            <div class="menu-usuario">
-
-
-                <a href="">
-
-                    <img src="./assets/icons/Vector (5).svg" alt="icone usuario">
-
-                </a>
-
-                <a href="">
-
-                    <img src="./assets/icons/Vector (6).svg" alt="icone compras">
-
-                </a>
-
-                <a href="">
-
-                    <img src="./assets/icons/Vector (7).svg" alt="icone pesquisa">
-
-                </a>
-
             </div>
-        </div>
         </div>
 
 
@@ -152,21 +153,52 @@
 
 
     <main>
+<!-- PAGINA HOME -->
+        <div class="banner">
 
-<div class="banner">
-
-    <div class="layout-grid main-flex">
-
-
-        <h1 id="title-main-page">Liga Gamers</h1>
+            <div class="layout-grid main-flex">
 
 
-        <p class="button-sobre alinhamento-center-center">Sobre</p>
+                <h1 id="title-main-page">Liga Gamers</h1>
 
-        
 
-    </div>
-</div>
+                <a href="" class="button-sobre alinhamento-center-center">Sobre</a>
+
+
+
+            </div>
+        </div>
+
+
+<!-- PAGINA DE CARDS DE JOGOS -->
+
+
+        <div class="layout-grid">
+
+            <section>
+
+                <article>
+
+                    <img src="./assets/images/Card-FIFA.png" alt="Card-FIFA">
+                    
+                    <div class="box-transparente">
+                        <div class="box-amarelo">
+                            <p>Mais popular</p>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <img src="./assets/images/Card-CS GO.png "alt="Card-CSGO">
+
+
+                </article>
+
+            </section>
+
+        </div>
 
 
     </main>
@@ -176,10 +208,13 @@
 
     <script>
 
-function mostrarmenu() {
-    document.getElementById("menu-navegacao") .classList.toggle("mostrarmenu")
-    
-}
+        function mostrarmenu() {
+            document.getElementById("menu-nav").classList.toggle("mostraromenu")
+        }
+
+        function mostrarmenuuser() {
+            document.getElementById("menu-user").classList.toggle("mostraromenuuser")
+        }
 
     </script>
 
