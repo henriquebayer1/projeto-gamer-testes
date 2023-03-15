@@ -9,7 +9,6 @@
 
 .layout-grid {
     width: 90%;
-    
     max-width: 375px;
     margin: 0 auto;
     border: 1px solid red;
@@ -78,7 +77,11 @@ body {}
 
 header {z-index: 20;
     height: 60px;
+    top: 0;
+    left: 0;
     background-color: #1B1426;
+    position: fixed;
+    width: 100vw;
 }
 
 /* Parte relacionada ao header top */
@@ -270,7 +273,7 @@ main {
 
 }
 
-main .banner {
+main .banner-home {
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
     width: 100%;
     background-color: rebeccapurple;
@@ -278,6 +281,7 @@ main .banner {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 606px;
+    margin-top: 60px;
 }
 
 main #title-main-page {
@@ -304,12 +308,20 @@ main .button-sobre {
 
  /* PARTE CARDS DE JOGOS */
 
- .cards-flex {height: 589px;
+ .card-jogos-flex {height: 589px;
 display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 
 }
 
-.box-transparente {height: 50px;
+.banner-card-jogos {background-color: #1B1426;
+   height: 589px; 
+   background-position: bottom;}
+
+/* <-- quadro de link usado primeiro para testes --> */
+/* .box-transparente {height: 50px;
     width: 335px;
     border: ;
     background-image: linear-gradient(to right bottom, rgba(225, 225, 225, 0.8), rgba(200, 200, 200, 0.4));
@@ -324,7 +336,99 @@ display: flex;
     -o-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
     -ms-transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
     transform: scale(0.6) translate(7px, 6px) skew(-27deg, 0deg);
-    }
+    } */
+
+
+/* PARTE DE DESCRICAO */
+
+.banner-descricao {
+background-color: #F9AA01;
+
+
+}
+
+
+.descricao-flex {
+height: 1535px;
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+
+}
+
+#title-descricao {font-family: TitiliumWeb-black;
+font-size: 18px;
+text-transform: uppercase;
+border-bottom: solid 2px #1B1426;
+padding: 90px 0px 40px 0px;
+
+
+}
 
 
 /****** FOOTER ******/
+
+
+/* MEDIAS QUERIES */
+
+/* tablets >= 768px */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+   .layout-grid { width: 100%;
+max-width: 1200px;
+border: 3px dotted yellowgreen;}
+
+/* HEADER */
+
+header {position: static;
+height: 140px;}
+    
+header .logo {width: 200px;}
+
+header .header-bottom .menu-navegacao {position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    height: 50px;
+    border: none;
+    
+
+}
+
+
+header .header-bottom .menu-navegacao a {border:none;}
+
+header .header-bottom nav > a:first-of-type {color: white;}
+
+header .header-bottom .menu-usuario {position: static;
+background-color: transparent;
+width: 180px;
+height: 50px;
+flex-direction: row;
+}
+
+header .header-bottom .redes-sociais,
+header .icon-menu-nav,
+header .icon-menu-elipse,
+header .header-bottom .phone,
+header .header-bottom .email
+
+
+{display: none;}
+
+
+
+
+
+
+/* MAIN */
+
+main {margin-top: 0;}
+
+}
