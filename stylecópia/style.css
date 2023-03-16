@@ -11,7 +11,7 @@
     width: 90%;
     max-width: 375px;
     margin: 0 auto;
-    border: 1px solid red;
+    
 }
 
 .alinhamento-between-center {
@@ -19,6 +19,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.alinhamento-around-center {display: flex;
+justify-content: space-around;
+align-items: center;}
 
 .alinhamento-center-center {
     display: flex;
@@ -292,6 +296,8 @@ main #title-main-page {
     filter: drop-shadow(0px 0px 7px #FD4255);
 }
 
+
+
 main .button-sobre {
     height: 40px;
     width: 171px;
@@ -372,45 +378,101 @@ padding: 90px 0px 40px 0px;
 
 /* MEDIAS QUERIES */
 
+
+
+
 /* tablets >= 768px */
 
 @media screen and (min-width: 768px) {
     
 }
 
+/* desktop >= 1200px */
+
 @media screen and (min-width: 1200px) {
 
    .layout-grid { width: 100%;
 max-width: 1200px;
-border: 3px dotted yellowgreen;}
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .header-top .alinhamento-between-center {height: 49px;}
 
 /* HEADER */
 
 header {position: static;
 height: 140px;}
     
-header .logo {width: 200px;}
+header .logo {width: 200px;
+margin-left: 120px;}
+
+
+
+
+
+/* HEADER TOP */
+
+header .header-top {display: block;
+border-bottom: #F9AA01 solid 1px;
+height: 49px;
+}
+
+header .header-top .contatos {display: flex;
+    width: 407px;
+    justify-content: space-between;
+    margin-left: 106px;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+header .header-top .redes-sociais {display: flex;
+    justify-content: space-between;
+    width: 128px;
+    margin-right: 115px;
+}
+
+header .header-top .phone {color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+header .header-top .email {color: white;
+    display: flex;
+    align-items: center;
+gap: 15px;}
+
+/* HEADER BOTTOM */
+
+header .header-bottom .alinhamento-between-center {height: 91px;}
 
 header .header-bottom .menu-navegacao {position: static;
     flex-direction: row;
     justify-content: space-between;
     width: 440px;
-    height: 50px;
+    height: 91px;
     border: none;
-    
+    align-items: center;
+    backdrop-filter: none;
+}
 
+header .header-bottom .menu-navegacao a {border:none;
 }
 
 
-header .header-bottom .menu-navegacao a {border:none;}
-
-header .header-bottom nav > a:first-of-type {color: white;}
 
 header .header-bottom .menu-usuario {position: static;
 background-color: transparent;
-width: 180px;
-height: 50px;
+width: 128px;
+height: auto;
 flex-direction: row;
+justify-content: space-between;
+backdrop-filter: none;
+margin-right: 115px;
 }
 
 header .header-bottom .redes-sociais,
@@ -429,6 +491,28 @@ header .header-bottom .email
 
 /* MAIN */
 
-main {margin-top: 0;}
+main {}
 
 }
+
+/* <!-- PAGINA HOME --> */
+
+main .banner-home {background-image: url(../assets/images/Banner_background_1.png);
+margin-top: 0;
+background-size: cover;}
+
+
+main #title-main-page {
+    
+    font-size: 80px;}
+
+
+    main .button-sobre { width: 203px;
+    }
+
+
+
+
+.banner-descricao {display: none}
+
+.banner-card-jogos {display: none;}
