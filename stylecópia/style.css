@@ -346,11 +346,15 @@ main .button-sobre {
 
 
 
-#card-FIFA {width: 335px;
-height: 189px;}
+#card-FIFA {
+    width: 335px;
+    height: 189px;
+}
 
-#card-CS-GO {width: 335px;
-    height: 189px;}
+#card-CS-GO {
+    width: 335px;
+    height: 189px;
+}
 
 /* <-- quadro de link usado primeiro para testes --> */
 /* .box-transparente {height: 50px;
@@ -402,38 +406,139 @@ height: 189px;}
 
 /****** FOOTER ******/
 
-footer {box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
-background-image: url(../assets/images/backgroung_footer.png);
-background-position: top;
-background-size: contain;
-padding-top: 90px;
-padding-bottom: 40px;
+footer {
+    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+    background-image: url(../assets/images/backgroung_footer.png);
+    background-position: top;
+    background-size: contain;
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
 
-footer .footer-top .logo {width: 110px;}
+footer .footer-top .logo {
+    width: 110px;
+}
 
 .titulo-footer {}
 
-footer .footer-top .logo-redes-sociais .texto-footer {font-family: Quicksand;
-font-size: 14px;
-font-weight: normal;
+footer .footer-top .logo-redes-sociais .texto-footer {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+
+.logo-redes-sociais {
+    width: 100%;
+    height: 304px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-top .redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer .footer-top .links-uteis {}
+
+
+footer .footer-top .links-uteis a {
+    color: white;
+    text-decoration: none;
+    font-family: TitiliumWeb-bold;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .footer-top .links-uteis .menu-footer {
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .footer-top .links-uteis .menu-footer li {list-style-type: none;
+width: 110px;
+margin-bottom: 20px;
+
+}
+
+footer .footer-top .menu-footer a::before {content: "\2015";
+margin-right: 10px;
+color: #F9AA01;}
+
+footer .footer-top .contatos p {color: white;
+    padding-top: 45px;
+    font-family: TitiliumWeb-bold;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .footer-top .contatos-titulo {color: #F9AA01;}
+
+footer .footer-top .titulo-footer {
+    font-family: TitiliumWeb-black;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-top: 130px;
+}
+
+footer .footer-top .titulo-footer hr {border: 2px solid #F9AA01;
+width: 112px;
+}
+
+
+footer .footer-top .newsletter hr {margin-bottom: 30px;}
+
+footer .newsletter input,
+footer .newsletter .button {width: 100%;
+height: 35px;
+border-radius: 8px;
+padding: 30px;}
+
+
+footer .footer-top .newsletter input {background-color: transparent;
+background-image: linear-gradient(to right bottom , rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+backdrop-filter: blur(6px);
+border: 1px white solid;
 color: white;
+padding: 5px 10px;
+font-family: TitiliumWeb-regular;
+font-size: 16px;}
+
+footer .footer-top .newsletter input::placeholder {color: white;}
+
+
+
+footer .newsletter button {display: flex;
+justify-content: center;
+align-items: center;
+background-color: #F9AA01;
+font-family: TitiliumWeb-regular;
+font-size: 16px;
 }
 
-.logo-redes-sociais {width: 100%;
-height: 304px;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
+
+.ancestral-icon-allup {position: absolute;
+width: 100%;
 }
 
-footer .footer-top .redes-sociais {display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;}
+#all-up-icon {
+    position: absolute;
+    right: 60px;
+    bottom: 115px;
+}
 
+/* FOOTER BOTTOM */
+
+footer .footer-bottom 
 
 
 
@@ -574,69 +679,69 @@ width: 100%;}
 
     /* <!-- PAGINA HOME --> */
 
-main .banner-home {
-    background-image: url(../assets/images/Banner_background_1.png);
-    margin-top: 0;
-    background-size: cover;
+    main .banner-home {
+        background-image: url(../assets/images/Banner_background_1.png);
+        margin-top: 0;
+        background-size: cover;
+    }
+
+
+    main #title-main-page {
+
+        font-size: 80px;
+    }
+
+
+    main .button-sobre {
+        width: 203px;
+    }
+
+
+
+
+    /* PARTE CARD JOGOS */
+
+    .banner-card-jogos {}
+
+    .card-jogos-flex {
+        width: 100%;
+        flex-direction: row;
+        height: 500px;
+    }
+
+    #card-FIFA {
+        width: 556px;
+        height: 313px;
+    }
+
+    #card-CS-GO {
+        width: 556px;
+        height: 313px;
+    }
+
+
+
+    /* PARTE DE DESCRICAO */
+
+    .banner-descricao {
+        display: none;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* CHAVE DE QUERIE MOBILE ACABA AQUI */
+
 }
-
-
-main #title-main-page {
-
-    font-size: 80px;
-}
-
-
-main .button-sobre {
-    width: 203px;
-}
-
-
-
-
-/* PARTE CARD JOGOS */
-
-.banner-card-jogos {}
-
-.card-jogos-flex {
-    width: 100%;
-    flex-direction: row; 
-    height: 500px;
-}
-
-#card-FIFA {width: 556px;
-height: 313px;}
-
-#card-CS-GO {width: 556px;
-    height: 313px;}
-
-
-
-/* PARTE DE DESCRICAO */
-
-.banner-descricao {display: none;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CHAVE DE QUERIE MOBILE ACABA AQUI */
-
-}
-
-
-
-
-
