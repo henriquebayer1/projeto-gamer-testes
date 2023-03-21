@@ -34,6 +34,7 @@
 
 
 
+
 /****** FONTES IMPORTADAS ******/
 
 
@@ -496,9 +497,9 @@ width: 112px;
 
 footer .footer-top .newsletter hr {margin-bottom: 30px;}
 
-footer .newsletter input,
-footer .newsletter .button {width: 100%;
-height: 35px;
+footer .footer-top .newsletter input, 
+footer .footer-top .newsletter .button {width: 100%;
+height: 50px;
 border-radius: 8px;
 padding: 30px;}
 
@@ -516,29 +517,37 @@ footer .footer-top .newsletter input::placeholder {color: white;}
 
 
 
-footer .newsletter button {display: flex;
+footer .newsletter .button {display: flex;
 justify-content: center;
 align-items: center;
 background-color: #F9AA01;
 font-family: TitiliumWeb-regular;
 font-size: 16px;
+margin-top: 20px;
 }
 
 
 
-.ancestral-icon-allup {position: absolute;
+.ancestral-icon-allup {position: relative;
 width: 100%;
 }
 
 #all-up-icon {
     position: absolute;
     right: 60px;
-    bottom: 115px;
+    bottom: 170px;
 }
 
 /* FOOTER BOTTOM */
 
-footer .footer-bottom 
+footer .footer-bottom {width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;}
+
+footer .footer-bottom p {color: white;
+    margin-top: 20px
+}
 
 
 
