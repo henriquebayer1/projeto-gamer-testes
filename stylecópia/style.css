@@ -398,11 +398,81 @@ main .button-sobre {
     font-family: TitiliumWeb-black;
     font-size: 18px;
     text-transform: uppercase;
-    border-bottom: solid 2px #1B1426;
-    padding: 90px 0px 40px 0px;
+    padding: 40px 0px 20px 0px;
 
 
 }
+
+.box-pai-articles {height: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* BOX 1 DA DESCRICAO  */
+.box-titulo-descricao hr {border: solid 1px #1B1426;
+width: 204px;
+}
+
+.box-titulo-descricao {display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;}
+
+
+
+
+.box-article {border: white 1px solid;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+backdrop-filter: blur(4px);
+height: 300px;
+width: 230px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+position: absolute;
+right: 25px;
+top: 205px;}
+
+.title-descricao-articles {font-family: TitiliumWeb-black;
+font-weight: 900;
+font-size: 18px;
+color: white;
+text-transform: uppercase;
+filter: drop-shadow(0px 0px 6px #C6A5E6);
+
+}
+
+.box-paragrafo-descricao-articles {width: 176px;
+height: 64px;}
+
+.paragrafo-descricao-articles {font-family: Quicksand;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    color: white;
+text-align: justify;}
+
+#icone-controle {width: 97px;
+height: 97px;}
+
+
+#joy-image {position: absolute;
+    left: 0;
+    top: 70px;
+
+}
+
+
+
+
+
+
 
 
 /****** FOOTER ******/
