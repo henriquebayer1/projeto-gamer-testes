@@ -405,7 +405,8 @@ main .button-sobre {
 
 
 
-.box-pai-articles {height: 1100px;
+.box-pai-articles {
+    height: 1100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -415,90 +416,118 @@ main .button-sobre {
 
 
 /* BOX 1 DA DESCRICAO  */
-.box-titulo-descricao hr {border: solid 1px #1B1426;
-width: 204px;
+.box-titulo-descricao hr {
+    border: solid 1px #1B1426;
+    width: 204px;
 }
 
-.box-titulo-descricao {display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;}
+.box-titulo-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 
 
-.box-article-1 {border: white 1px solid;
+.box-article-1 {
+    border: white 1px solid;
     border-radius: 8px;
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
-backdrop-filter: blur(4px);
-height: 300px;
-width: 230px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-flex-direction: column;
-position: absolute;
-right: 25px;
-top: 205px;}
+    backdrop-filter: blur(4px);
+    height: 300px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+    top: 205px;
+}
 
-.title-descricao-articles {font-family: TitiliumWeb-black;
-font-weight: 900;
-font-size: 18px;
-color: white;
-text-transform: uppercase;
-filter: drop-shadow(0px 0px 6px #C6A5E6);
+.title-descricao-articles {
+    font-family: TitiliumWeb-black;
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 0px 6px #C6A5E6);
 
 }
 
-.box-paragrafo-descricao-articles {width: 176px;
-height: 64px;}
+.box-paragrafo-descricao-articles {
+    width: 176px;
+    height: 64px;
+}
 
-.paragrafo-descricao-articles {font-family: Quicksand;
+.paragrafo-descricao-articles {
+    font-family: Quicksand;
     font-weight: 400;
     font-size: 13px;
     font-style: normal;
     color: white;
-text-align: justify;}
+    text-align: justify;
+}
 
-#icone-controle {width: 97px;
-height: 97px;}
+#icone-controle {
+    width: 97px;
+    height: 97px;
+}
 
 
-#joy-image {position: absolute;
+#joy-image {
+    position: absolute;
     left: 0;
     top: 70px;
 
 }
 
+#joy-image-desktop {
+    display: none;
+}
 
 
 /* BOX 2 DA DESCRICAO  */
 
 
 
-.box-article-2 {border: white 1px solid;
+.box-article-2 {
+    border: white 1px solid;
     border-radius: 8px;
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
-backdrop-filter: blur(4px);
-height: 300px;
-width: 230px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-flex-direction: column;
-position: absolute;
-left: 25px;
-bottom: 0px;}
+    backdrop-filter: blur(4px);
+    height: 300px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
+}
 
-#icone-gamer {width: 97px;
-    height: 97px;}
+#icone-gamer {
+    width: 97px;
+    height: 97px;
+}
 
-    .box-paragrafo-descricao-articles-2 {width: 162px;
-        height: 112px;}
-    
-        #jinx-image {position: absolute;
-        left: 30px;
-    bottom: -15px;}
+.box-paragrafo-descricao-articles-2 {
+    width: 162px;
+    height: 112px;
+}
+
+#jinx-image {
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+}
+
+#jinx-image-desktop {
+    display: none;
+}
 
 
 
@@ -560,24 +589,30 @@ footer .footer-top .links-uteis .menu-footer {
     flex-wrap: wrap;
 }
 
-footer .footer-top .links-uteis .menu-footer li {list-style-type: none;
-width: 110px;
-margin-bottom: 20px;
+footer .footer-top .links-uteis .menu-footer li {
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
 
 }
 
-footer .footer-top .menu-footer a::before {content: "\2015";
-margin-right: 10px;
-color: #F9AA01;}
+footer .footer-top .menu-footer a::before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+}
 
-footer .footer-top .contatos p {color: white;
+footer .footer-top .contatos p {
+    color: white;
     padding-top: 45px;
     font-family: TitiliumWeb-bold;
     font-size: 16px;
     font-weight: 700;
 }
 
-footer .footer-top .contatos-titulo {color: #F9AA01;}
+footer .footer-top .contatos-titulo {
+    color: #F9AA01;
+}
 
 footer .footer-top .titulo-footer {
     font-family: TitiliumWeb-black;
@@ -587,46 +622,57 @@ footer .footer-top .titulo-footer {
     margin-top: 130px;
 }
 
-footer .footer-top .titulo-footer hr {border: 2px solid #F9AA01;
-width: 112px;
+footer .footer-top .titulo-footer hr {
+    border: 2px solid #F9AA01;
+    width: 112px;
 }
 
 
-footer .footer-top .newsletter hr {margin-bottom: 30px;}
+footer .footer-top .newsletter hr {
+    margin-bottom: 30px;
+}
 
-footer .footer-top .newsletter input, 
-footer .footer-top .newsletter .button {width: 100%;
-height: 50px;
-border-radius: 8px;
-padding: 30px;}
-
-
-footer .footer-top .newsletter input {background-color: transparent;
-background-image: linear-gradient(to right bottom , rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
-backdrop-filter: blur(6px);
-border: 1px white solid;
-color: white;
-padding: 5px 10px;
-font-family: TitiliumWeb-regular;
-font-size: 16px;}
-
-footer .footer-top .newsletter input::placeholder {color: white;}
+footer .footer-top .newsletter input,
+footer .footer-top .newsletter .button {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 30px;
+}
 
 
+footer .footer-top .newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(6px);
+    border: 1px white solid;
+    color: white;
+    padding: 5px 10px;
+    font-family: TitiliumWeb-regular;
+    font-size: 16px;
+}
 
-footer .newsletter .button {display: flex;
-justify-content: center;
-align-items: center;
-background-color: #F9AA01;
-font-family: TitiliumWeb-regular;
-font-size: 16px;
-margin-top: 20px;
+footer .footer-top .newsletter input::placeholder {
+    color: white;
 }
 
 
 
-.ancestral-icon-allup {position: relative;
-width: 100%;
+footer .newsletter .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: TitiliumWeb-regular;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+.ancestral-icon-allup {
+    position: relative;
+    width: 100%;
 }
 
 #all-up-icon {
@@ -637,12 +683,15 @@ width: 100%;
 
 /* FOOTER BOTTOM */
 
-footer .footer-bottom {width: 100%;
+footer .footer-bottom {
+    width: 100%;
     display: flex;
-align-items: center;
-justify-content: center;}
+    align-items: center;
+    justify-content: center;
+}
 
-footer .footer-bottom p {color: white;
+footer .footer-bottom p {
+    color: white;
     margin-top: 20px
 }
 
@@ -829,16 +878,289 @@ footer .footer-bottom p {color: white;
 
     /* PARTE DE DESCRICAO */
 
-    .banner-descricao {
-        display: none;
+    .banner-descricao {}
+
+
+    .descricao-flex {
+        width: 1440px;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #title-descricao {
+        font-size: 40px;
+
+
 
     }
 
 
 
+    .box-pai-articles {
+        height: 715px;
+
+    }
+
+
+    /* BOX 1 DA DESCRICAO  */
 
 
 
+    .box-article-1 {
+        height: 440px;
+        width: 360px;
+        position: absolute;
+        right: 600px;
+        top: 200px;
+    }
+
+    .title-descricao-articles {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    .box-paragrafo-descricao-articles {
+        width: 248px;
+        height: 80px;
+    }
+
+    .paragrafo-descricao-articles {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #icone-controle {
+        width: 143px;
+        height: 143px;
+    }
+
+
+    #joy-image {
+        display: none;
+    }
+
+    #joy-image-desktop {
+        display: block;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+
+    /* BOX 2 DA DESCRICAO  */
+
+
+
+    .box-article-2 {
+        height: 440px;
+        width: 360px;
+        position: absolute;
+        left: 605px;
+        bottom: 75px;
+    }
+
+    #icone-gamer {
+        width: 162px;
+        height: 162px;
+    }
+
+    .box-paragrafo-descricao-articles-2 {
+        width: 248px;
+        height: 120px;
+    }
+
+    #jinx-image {
+        display: none;
+    }
+
+    #jinx-image-desktop {
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    /* FOOTER */
+
+
+    footer {
+        box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+        background-image: url(../assets/images/backgroung_footer.png);
+        background-position: top;
+        background-size: contain;
+        
+    }
+    
+.footer-top {display: flex;
+    flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.box-footer-top {display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 380px;
+width: 1010px;
+border: #FD4255 solid 2px;}
+
+    footer .footer-top .logo {
+        width: 196px;
+    }
+    
+    .titulo-footer {}
+    
+    footer .footer-top .logo-redes-sociais .texto-footer {
+       
+        font-size: 16px;
+        
+    }
+    
+    .logo-redes-sociais {
+        width: 300px;
+        height: 256px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    footer .footer-top .redes-sociais {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer .footer-top .links-uteis {width: 295px;
+    height: 280px;}
+    
+    
+    footer .footer-top .links-uteis a {
+        color: white;
+        text-decoration: none;
+        font-family: TitiliumWeb-bold;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    footer .footer-top .links-uteis .menu-footer {
+        padding-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer .footer-top .links-uteis .menu-footer li {
+        list-style-type: none;
+        width: 110px;
+        margin-bottom: 20px;
+    
+    }
+    
+    footer .footer-top .menu-footer a::before {
+        content: "\2015";
+        margin-right: 10px;
+        color: #F9AA01;
+    }
+    
+    footer .footer-top .contatos p {
+        color: white;
+        padding-top: 45px;
+        font-family: TitiliumWeb-bold;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    footer .footer-top .contatos-titulo {
+        color: #F9AA01;
+    }
+    
+    footer .footer-top .titulo-footer {
+        font-family: TitiliumWeb-black;
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        margin-top: 130px;
+    }
+    
+    footer .footer-top .titulo-footer hr {
+        border: 2px solid #F9AA01;
+        width: 112px;
+    }
+    
+    
+    footer .footer-top .newsletter hr {
+        margin-bottom: 30px;
+    }
+    
+    footer .footer-top .newsletter input,
+    footer .footer-top .newsletter .button {
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        padding: 30px;
+    }
+    
+    
+    footer .footer-top .newsletter input {
+        background-color: transparent;
+        background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+        backdrop-filter: blur(6px);
+        border: 1px white solid;
+        color: white;
+        padding: 5px 10px;
+        font-family: TitiliumWeb-regular;
+        font-size: 16px;
+    }
+    
+    footer .footer-top .newsletter input::placeholder {
+        color: white;
+    }
+    
+    
+    
+    footer .newsletter .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F9AA01;
+        font-family: TitiliumWeb-regular;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    
+    
+    .ancestral-icon-allup {
+        position: relative;
+        width: 100%;
+    }
+    
+    #all-up-icon {
+        position: absolute;
+        right: 60px;
+        bottom: 170px;
+    }
+    
+    /* FOOTER BOTTOM */
+    
+    footer .footer-bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer .footer-bottom p {
+        color: white;
+        margin-top: 20px
+    }
+    
 
 
 
