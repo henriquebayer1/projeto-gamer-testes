@@ -403,6 +403,8 @@ main .button-sobre {
 
 }
 
+
+
 .box-pai-articles {height: 1100px;
     width: 100%;
     display: flex;
@@ -425,7 +427,7 @@ flex-direction: column;}
 
 
 
-.box-article {border: white 1px solid;
+.box-article-1 {border: white 1px solid;
     border-radius: 8px;
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
 backdrop-filter: blur(4px);
@@ -470,8 +472,33 @@ height: 97px;}
 
 
 
+/* BOX 2 DA DESCRICAO  */
 
 
+
+.box-article-2 {border: white 1px solid;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+backdrop-filter: blur(4px);
+height: 300px;
+width: 230px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+position: absolute;
+left: 25px;
+bottom: 0px;}
+
+#icone-gamer {width: 97px;
+    height: 97px;}
+
+    .box-paragrafo-descricao-articles-2 {width: 162px;
+        height: 112px;}
+    
+        #jinx-image {position: absolute;
+        left: 30px;
+    bottom: -15px;}
 
 
 
