@@ -992,6 +992,8 @@ footer .footer-bottom p {
         background-image: url(../assets/images/backgroung_footer.png);
         background-position: top;
         background-size: contain;
+        height: 520px;
+        padding: 0;
         
     }
     
@@ -999,15 +1001,17 @@ footer .footer-bottom p {
     flex-direction: row;
 justify-content: space-between;
 align-items: center;
-width: 100%;
+width: 90%;
+
 }
 
-.box-footer-top {display: flex;
+.box-footer-top-1 {display: flex;
 flex-direction: row;
 justify-content: space-between;
 height: 380px;
-width: 1010px;
-border: #FD4255 solid 2px;}
+width: 100%;
+margin-top: 50px;
+}
 
     footer .footer-top .logo {
         width: 196px;
@@ -1037,29 +1041,24 @@ border: #FD4255 solid 2px;}
         width: 100%;
     }
     
-    footer .footer-top .links-uteis {width: 295px;
-    height: 280px;}
+    footer .footer-top .links-uteis {width: 130px;
+    height: 185px;
+padding-right: 200px;
+padding-left: 30px;}
     
     
-    footer .footer-top .links-uteis a {
-        color: white;
-        text-decoration: none;
-        font-family: TitiliumWeb-bold;
-        font-size: 16px;
-        font-weight: 700;
-    }
+    
     
     footer .footer-top .links-uteis .menu-footer {
-        padding-top: 45px;
-        display: flex;
-        flex-wrap: wrap;
+        padding-top: 0px;
+       
     }
     
     footer .footer-top .links-uteis .menu-footer li {
         list-style-type: none;
         width: 110px;
-        margin-bottom: 20px;
-    
+        
+        margin-top: 15px;
     }
     
     footer .footer-top .menu-footer a::before {
@@ -1068,9 +1067,11 @@ border: #FD4255 solid 2px;}
         color: #F9AA01;
     }
     
+    footer .footer-top .contatos {padding-right: 200px;}
+
     footer .footer-top .contatos p {
         color: white;
-        padding-top: 45px;
+        padding-top: 15px;
         font-family: TitiliumWeb-bold;
         font-size: 16px;
         font-weight: 700;
@@ -1085,7 +1086,7 @@ border: #FD4255 solid 2px;}
         font-size: 20px;
         font-weight: 900;
         color: white;
-        margin-top: 130px;
+        margin-top: 0px;
     }
     
     footer .footer-top .titulo-footer hr {
@@ -1143,8 +1144,8 @@ border: #FD4255 solid 2px;}
     
     #all-up-icon {
         position: absolute;
-        right: 60px;
-        bottom: 170px;
+        right: 77px;
+        bottom: -215px;
     }
     
     /* FOOTER BOTTOM */
@@ -1156,7 +1157,7 @@ border: #FD4255 solid 2px;}
         justify-content: center;
     }
     
-    footer .footer-bottom p {
+    footer .footer-bottom p {display: none;
         color: white;
         margin-top: 20px
     }
